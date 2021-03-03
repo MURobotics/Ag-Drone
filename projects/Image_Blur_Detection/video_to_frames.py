@@ -9,7 +9,6 @@ def get_video_file():
             path = input("Please enter folder location: ")
             relpath = "../"+path
             path = os.path.abspath(path)
-
             if(os.path.isfile(path)==True):
                 break
             elif(os.path.isdir(relpath)):
