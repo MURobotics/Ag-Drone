@@ -1,0 +1,4 @@
+/images
+*.jpg
+*.DS_store
+/.vscode
