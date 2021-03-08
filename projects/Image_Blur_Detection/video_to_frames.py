@@ -37,7 +37,7 @@ def get_frame(video,sec,count):
     video.set(cv2.CAP_PROP_POS_MSEC,sec*1000)
     boolean,image = video.read()
     if boolean:
-        cv2.imwrite("image_holder"+str(count)+".jpg",image)
+        cv2.imwrite("image_holder/"+str(count)+".jpg",image)
     return boolean
 
 def main():
@@ -53,6 +53,9 @@ def main():
             sec += fps
             sec = round(sec,2)
             boolean = get_frame(video,sec,count)
+
+    except:
+        print("Welp you tried")
 
         
 
